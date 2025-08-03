@@ -1,0 +1,32 @@
+:root {
+    --amarelo1: #F7E8C2;
+    --amarelo2: #E7CE9D;
+    --amarelo3: #D8B87C;
+    --amarelo4: #BF9765;
+    --amarelo5: #D4AF37;
+    --cinza: #888C94;
+    --pretoClaro: #323232;
+    --azulEscuro: #1D2232;
+    --preto: #121212;
+    --branco: #FEFEFE;
+    --degradeAmarelo: linear-gradient(to right, #E3C263, #ECD58F, #C49B27);
+    --degradeAzul: linear-gradient(to right, #1D2232, #121212);
+    --h1Font: 'Montaga', serif;
+    --fontFamily: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fontFamily);
+    background-color: var(--branco);
+    color: var(--preto);
+}
+
+header {
+    background-color: var(--degradeAzul);
+    height: 90px;
+    width: 100vw;
+    padding: 30px;
+}
