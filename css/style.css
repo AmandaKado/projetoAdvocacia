@@ -54,6 +54,16 @@ button {
     color: inherit;
 }
 
+.spanAmarelo {
+    color: var(--amarelo1);
+    font-weight: bold;
+}
+
+.spanAzul {
+    color: var(--azulEscuro);
+    font-weight: bold;
+}
+
 /* Cabeçalho */
 
 
