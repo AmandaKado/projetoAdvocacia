@@ -64,6 +64,10 @@ button {
     font-weight: bold;
 }
 
+.fundoAzulDegrade {
+    background: var(--degradeAzul);
+}
+
 /* Cabeçalho */
 
 
