@@ -70,6 +70,19 @@ button {
 
 /* Cabeçalho */
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    height: 30px;
+    padding: 15px 30px;
+}
 
 /* Principal */
 
