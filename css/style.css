@@ -73,15 +73,35 @@ button {
 header {
     display: flex;
     justify-content: space-between;
+    width: 100vw;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
+    padding: 15px 30px;
 }
 
 header img {
     height: 30px;
-    padding: 15px 30px;
+}
+
+.navPrincipal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+[data-menu="abrirMenu"], [data-menu="fecharMenu"] {
+    cursor: pointer;
+}
+
+[data-menu="fecharMenu"] {
+    display: none;
+}
+
+nav ul {
+    display: none;  
 }
 
 /* Principal */
@@ -91,3 +111,24 @@ header img {
 
 
 /* Responsividade */
+
+@media (min-width: 1024px) {
+
+    /* CABEÇALHO COMPUTADOR */
+
+    [data-menu="abrirMenu"], [data-menu="fecharMenu"] {
+        display: none;
+    }
+
+    nav {
+        align-items: center;
+        padding: 15px 30px;
+    }
+    
+    nav ul {
+        display: flex;
+        color: var(--amarelo1);
+        gap: 30px;
+    }
+
+}
