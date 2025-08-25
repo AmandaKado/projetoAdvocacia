@@ -31,7 +31,7 @@ ul, ol{
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: var(--amarelo1);
 }
 
 /* Configuração Global */
@@ -70,38 +70,34 @@ button {
 
 /* Cabeçalho */
 
-header {
+#header {
     display: flex;
-    justify-content: space-between;
-    width: 100vw;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     padding: 15px 30px;
-}
-
-header img {
-    height: 30px;
-}
-
-.navPrincipal {
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 20px;
 }
 
-[data-menu="abrirMenu"], [data-menu="fecharMenu"] {
-    cursor: pointer;
+#logo img { 
+    height: 30px; 
 }
 
-[data-menu="fecharMenu"] {
+#menu {
+    display: flex;
+    gap: .5rem;
+}
+
+#menu a {
+    display: block;
+}
+
+#btnMobile {
     display: none;
+    color: #888C94;
 }
 
-nav ul {
-    display: none;  
+#btnMobile:hover{
+    cursor: pointer;
+    background-color: #C49B27;
 }
 
 /* Principal */
@@ -112,23 +108,12 @@ nav ul {
 
 /* Responsividade */
 
-@media (min-width: 1024px) {
+@media (max-width: 600px) {
+    #btnMobile {
+        display: block;
+    }
 
-    /* CABEÇALHO COMPUTADOR */
-
-    [data-menu="abrirMenu"], [data-menu="fecharMenu"] {
+    #menu {
         display: none;
     }
-
-    nav {
-        align-items: center;
-        padding: 15px 30px;
-    }
-    
-    nav ul {
-        display: flex;
-        color: var(--amarelo1);
-        gap: 30px;
-    }
-
 }
