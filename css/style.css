@@ -73,7 +73,8 @@ button {
 #header {
     display: flex;
     align-items: center;
-    padding: 15px 30px;
+    width: 100%;
+    padding: 15px;
     justify-content: space-between;
 }
 
@@ -82,23 +83,87 @@ button {
 }
 
 #menu {
-    display: flex;
+    display: block;
     gap: .5rem;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 65px;
+    right: 0px;
+    background: var(--degradeAzul);
+    z-index: 1000;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: hidden;
 }
 
 #menu a {
     display: block;
+    font-size: 1.5em;
+    padding: 1rem 0;
+    margin: 0px 1rem;
 }
 
 #btnMobile {
-    display: none;
-    color: #888C94;
+    cursor: pointer;
+    display: flex;
+    padding: .5rem 1rem;
+    border: none;
+    background: none;
 }
 
-#btnMobile:hover{
-    cursor: pointer;
-    background-color: #C49B27;
+#hamburguer {
+    width: 20px;
+    border-top: 2px solid rgba(231, 206, 157, 1);
 }
+
+#hamburguer::after, #hamburguer::before {
+    content: '';
+    display: block;
+    width: 20px;
+    border-top: 2px solid rgba(231, 206, 157, 1);
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+
+#nav.active #hamburguer {
+    border-top-color: transparent;
+}
+
+#nav.active #hamburguer:before {
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+
+.navLink {
+    display: block;
+}
+
+.navLink:hover {
+    cursor: pointer;
+    color: var(--degradeAmarelo);
+}
+
+.separador {
+    height: 3px;
+    width: 100%;
+    margin-bottom: 30px;
+    background: var(--degradeAmarelo);
+
+}
+
+#nav.active #menu { 
+    height: calc(100vh - 65px);
+    visibility: visible;
+    overflow-y: auto;
+}
+
 
 /* Principal */
 
@@ -109,22 +174,5 @@ button {
 /* Responsividade */
 
 @media (max-width: 600px) {
-    #btnMobile {
-        display: block;
-    }
 
-    #menu {
-        display: none;
-        position: absolute;
-        width: 100%;
-        height: calc(100vh - 60px);
-        top: 60px;
-        right: 0px;
-        background: var(--degradeAzul);
-        z-index: 1000;
-    }
-
-    #nav.active #menu { 
-        display: block;
-    }
 }
