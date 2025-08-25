@@ -5,10 +5,19 @@ export default function initMenuMobile() {
     function toggleMenu(event) {
         
         if (event.type === "touchstart") event.preventDefault();
-        
+
         const nav = document.getElementById("nav");
 
         nav.classList.toggle("active");
+
+        event.currentTarget.setAttribute("aria-expanded", nav.classList.contains("active"));
+
+        if (active) {
+            event.currentTarget.setAttribute("aria-label", "Fechar Menu");
+        }
+        else {
+            event.currentTarget.setAttribute("aria-label", "Abrir Menu");
+        }
 
     }
 
