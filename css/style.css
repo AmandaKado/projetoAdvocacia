@@ -115,5 +115,16 @@ button {
 
     #menu {
         display: none;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 60px);
+        top: 60px;
+        right: 0px;
+        background: var(--degradeAzul);
+        z-index: 1000;
+    }
+
+    #nav.active #menu { 
+        display: block;
     }
 }
