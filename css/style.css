@@ -69,7 +69,7 @@ button {
     background: var(--degradeAzul);
 }
 
-/* Cabeçalho */
+/* CABEÇALHO */
 
 #header {
     display: flex;
@@ -195,8 +195,22 @@ button {
 
 /* Principal */
 
+/** Seção Inicio **/
+
+#inicio {
+    padding: 60px 15px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9),
+        rgba(29, 34, 50, 0.9)
+    ),
+    url('../media/backgroungPredio.jpg');
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
 
 /* Rodapé */
-
 
 /* Responsividade */
