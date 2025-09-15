@@ -198,7 +198,7 @@ button {
 /** Seção Inicio **/
 
 #inicio {
-    padding: 60px 15px;
+    padding: 60px 20px;
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.9),
@@ -210,7 +210,39 @@ button {
     background-repeat: no-repeat;
 }
 
+#inicio h1 {
+    font-family: var(--h1Font);
+    font-size: 2rem;
+    font-weight: normal;
+    color: var(--amarelo1);
+    margin-bottom: 20px;
+}
 
+#inicio p {
+    color: var(--branco);
+    margin-bottom: 20px;
+}
+
+#inicio a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+    border-radius: 10px;
+    background-color: var(--amarelo2);
+    width: 100%;
+}
+
+#inicio a div {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--azulEscuro);
+}
+
+#inicio img {
+    height: 30px;
+    margin-left: 15px;
+}
 /* Rodapé */
 
 /* Responsividade */
