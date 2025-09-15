@@ -229,8 +229,17 @@ button {
     justify-content: center;
     padding: 20px 15px;
     border-radius: 10px;
-    background-color: var(--amarelo2);
+    background: var(--amarelo2);
     width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#inicio a:hover {
+    background: var(--amarelo3);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+    transform: translateY(-1px) scale(1.01); 
 }
 
 #inicio a div {
@@ -243,6 +252,7 @@ button {
     height: 30px;
     margin-left: 15px;
 }
+
 /* Rodapé */
 
 /* Responsividade */
