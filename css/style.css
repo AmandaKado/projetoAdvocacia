@@ -55,6 +55,14 @@ button {
     color: inherit;
 }
 
+h1 {
+    font-family: var(--h1Font);
+    font-size: clamp(2rem, 5vw, 3rem); 
+    font-weight: normal;
+    color: var(--amarelo1);
+    margin-bottom: 20px;
+}
+
 .spanAmarelo {
     color: var(--amarelo1);
     font-weight: bold;
@@ -178,6 +186,10 @@ button {
     padding-top: 20px;
 }
 
+#menu .separador {
+    margin-bottom: 15px;
+}
+
 .navLink {
     display: inline-block;
     position: relative;
@@ -211,9 +223,8 @@ button {
 }
 
 .separador {
-    height: 3px;
+    height: 5px;
     width: 100%;
-    margin-bottom: 15px;
     background: var(--degradeAmarelo);
 }
 
@@ -240,16 +251,26 @@ button {
     background-repeat: no-repeat;
 }
 
-#inicio h1 {
-    font-family: var(--h1Font);
-    font-size: 2rem;
-    font-weight: normal;
-    color: var(--amarelo1);
+#inicio p {
+    color: var(--branco);
     margin-bottom: 20px;
 }
 
-#inicio p {
-    color: var(--branco);
+/** Seção Sobre **/
+
+#sobreNos {
+    padding: 60px 20px;
+}
+
+#sobreNos img {
+    width: 100%;
+    border-radius: 50px 10px;
+    box-shadow: 5px 5px 0px 0px var(--amarelo3);
+}
+
+#sobreNos h1 {
+    color: var(--azulEscuro);
+    margin-top: 30px;
     margin-bottom: 20px;
 }
 
