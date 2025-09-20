@@ -69,6 +69,36 @@ button {
     background: var(--degradeAzul);
 }
 
+.btnAmarelo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+    border-radius: 10px;
+    background: var(--amarelo2);
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btnAmarelo:hover {
+    background: var(--amarelo3);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+    transform: translateY(-1px) scale(1.01); 
+}
+
+.btnAmarelo div {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: var(--azulEscuro);
+}
+
+.btnAmarelo img {
+    height: 30px;
+    margin-left: 15px;
+}
+
 /* CABEÇALHO */
 
 #header {
@@ -221,36 +251,6 @@ button {
 #inicio p {
     color: var(--branco);
     margin-bottom: 20px;
-}
-
-#inicio a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 15px;
-    border-radius: 10px;
-    background: var(--amarelo2);
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-#inicio a:hover {
-    background: var(--amarelo3);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
-    transition: .3s;
-    transform: translateY(-1px) scale(1.01); 
-}
-
-#inicio a div {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: var(--azulEscuro);
-}
-
-#inicio img {
-    height: 30px;
-    margin-left: 15px;
 }
 
 /* Rodapé */
