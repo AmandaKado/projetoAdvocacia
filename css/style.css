@@ -149,7 +149,7 @@ h1 {
     gap: .5rem;
     position: absolute;
     width: 100%;
-    height: calc(100vh - 60px);
+    height: calc(100vh);
     top: 60px;
     right: 0px;
     background: var(--degradeAzul);
