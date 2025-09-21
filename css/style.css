@@ -310,6 +310,79 @@ h1 {
     margin-top: 20px;
 }
 
+/** Seção Áreas de Atuação **/
+
+#areasAtuacao {
+    padding: 60px 20px;
+    background: var(--degradeAzul);
+}
+
+#areasAtuacao p {
+    color: var(--branco);
+    margin-bottom: 20px;
+}
+
+#areasAtuacao .caixaAreas {
+    display: block;
+    background-color: var(--branco);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 0 var(--amarelo3);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+#areasAtuacao .caixaAreas:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 5px 5px 0 0 var(--amarelo5);
+}
+
+#areasAtuacao .caixaAreas p {
+    color: var(--pretoClaro);
+}
+
+#areasAtuacao .divIconeTitulo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#areasAtuacao .caixaAreas h2 {
+    color: var(--amarelo4);
+    font-size: clamp(1.5rem, 5vw, 3rem); 
+}
+
+#areasAtuacao .iconeContainer {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+#areasAtuacao .iconeContainer img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.6s ease-in-out;
+}
+
+#areasAtuacao .caixaAreas .iconeWhatsapp {
+    opacity: 0;
+}
+
+#areasAtuacao .caixaAreas:hover .iconeAdvocacia {
+    opacity: 0;
+}
+
+#areasAtuacao .caixaAreas:hover .iconeWhatsapp {
+    opacity: 1;
+}
+
+
+
+
 /* Rodapé */
 
 /* Responsividade */
