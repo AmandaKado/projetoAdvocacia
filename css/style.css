@@ -192,11 +192,12 @@ h1 {
 
 #nav.active #hamburguer:before {
     transform: rotate(135deg);
+    top: 0px;
 }
 
 #nav.active #hamburguer::after {
     transform: rotate(-135deg);
-    top: -6px;
+    top: -7px;
 }
 
 #menu li {
