@@ -36,14 +36,14 @@ a {
 
 /* Configuração Global */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--branco);
     font-family: var(--fontFamily);
-    padding-top: 63px;
-}
-
-html {
-    scroll-behavior: smooth;
+    padding-top: 60px;
 }
 
 p {
@@ -120,11 +120,10 @@ h1 {
 }
 
 .separador {
-    height: 5px;
     width: 100vw;
-    background-color: var(--degradeAmarelo);
+    height: 5px;
+    background: var(--degradeAmarelo);
 }
-
 
 /* CABEÇALHO */
 
