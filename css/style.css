@@ -119,6 +119,13 @@ h1 {
     margin-left: 15px;
 }
 
+.separador {
+    height: 5px;
+    width: 100vw;
+    background-color: var(--degradeAmarelo);
+}
+
+
 /* CABEÇALHO */
 
 #header {
@@ -232,12 +239,6 @@ h1 {
 
 .navLink:hover::after {
     transform: scaleX(1);
-}
-
-.separador {
-    height: 3px;
-    width: 100%;
-    background: var(--degradeAmarelo);
 }
 
 #nav.active #menu { 
@@ -379,9 +380,6 @@ h1 {
 #areasAtuacao .caixaAreas:hover .iconeWhatsapp {
     opacity: 1;
 }
-
-
-
 
 /* Rodapé */
 
