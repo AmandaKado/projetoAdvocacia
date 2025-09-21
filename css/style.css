@@ -71,6 +71,10 @@ h1 {
     scroll-margin-top: 60px;
 }
 
+.secao {
+    padding: 60px 20px;
+}
+
 .marginParaBaixo {
     margin-bottom: 15px;
 }
@@ -190,7 +194,7 @@ h1 {
     border-top-color: transparent;
 }
 
-#nav.active #hamburguer:before {
+#nav.active #hamburguer::before {
     transform: rotate(135deg);
     top: 0px;
 }
@@ -253,7 +257,6 @@ h1 {
 /** Seção Inicio **/
 
 #inicio {
-    padding: 60px 20px;
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.9),
@@ -272,11 +275,7 @@ h1 {
 
 /** Seção Sobre **/
 
-#sobreNos {
-    padding: 60px 20px;
-}
-
-#sobreNos #fotoPerfil {
+#fotoPerfil {
     width: 100%;
     border-radius: 50px 10px;
     box-shadow: 5px 5px 0px 0px var(--amarelo3);
@@ -292,7 +291,7 @@ h1 {
     margin-top: 20px;
 }
 
-#sobreNos .subtituloSobreNos {
+.subtituloSobreNos {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
@@ -307,14 +306,13 @@ h1 {
     margin-right: 10px;
 }
 
-#sobreNos .btnAmarelo {
+.btnAmarelo {
     margin-top: 20px;
 }
 
 /** Seção Áreas de Atuação **/
 
 #areasAtuacao {
-    padding: 60px 20px;
     background: var(--degradeAzul);
 }
 
@@ -323,7 +321,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-#areasAtuacao .caixaAreas {
+.caixaAreas {
     display: block;
     background-color: var(--branco);
     padding: 20px;
@@ -333,34 +331,34 @@ h1 {
     transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
 
-#areasAtuacao .caixaAreas:hover {
+.caixaAreas:hover {
     transform: translateY(-5px) scale(1.03);
     box-shadow: 5px 5px 0 0 var(--amarelo5);
 }
 
 #areasAtuacao .caixaAreas p {
-    color: var(--pretoClaro);
+    color: var(--azulEscuro);
 }
 
-#areasAtuacao .divIconeTitulo {
+.divIconeTitulo {
     display: flex;
     align-items: center;
     gap: 15px;
     margin-bottom: 20px;
 }
 
-#areasAtuacao .caixaAreas h2 {
+.caixaAreas h2 {
     color: var(--amarelo4);
     font-size: clamp(1.5rem, 5vw, 3rem); 
 }
 
-#areasAtuacao .iconeContainer {
+.iconeContainer {
     position: relative;
     width: 30px;
     height: 30px;
 }
 
-#areasAtuacao .iconeContainer img {
+.iconeContainer img {
     position: absolute;
     top: 0%;
     left: 0%;
@@ -369,15 +367,15 @@ h1 {
     transition: opacity 0.4s ease-in-out;
 }
 
-#areasAtuacao .caixaAreas .iconeWhatsapp {
+.caixaAreas .iconeWhatsapp {
     opacity: 0;
 }
 
-#areasAtuacao .caixaAreas:hover .iconeAdvocacia {
+.caixaAreas:hover .iconeAdvocacia {
     opacity: 0;
 }
 
-#areasAtuacao .caixaAreas:hover .iconeWhatsapp {
+.caixaAreas:hover .iconeWhatsapp {
     opacity: 1;
 }
 
