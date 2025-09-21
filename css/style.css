@@ -149,8 +149,8 @@ h1 {
     gap: .5rem;
     position: absolute;
     width: 100%;
-    height: calc(100vh - 63px);
-    top: 63px;
+    height: calc(100vh - 60px);
+    top: 60px;
     right: 0px;
     background: var(--degradeAzul);
     z-index: 1000;
@@ -197,12 +197,12 @@ h1 {
 
 #nav.active #hamburguer::after {
     transform: rotate(-135deg);
-    top: -7px;
+    top: -6px;
 }
 
 #menu li {
     padding-left: 30px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 #menu .separador {
