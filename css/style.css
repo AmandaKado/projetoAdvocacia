@@ -177,31 +177,39 @@ h1 {
 
 #hamburguer {
     width: 20px;
-    border-top: 2px solid rgba(231, 206, 157, 1);
-}
-
-#hamburguer::after, #hamburguer::before {
-    content: '';
+    height: 2px;
+    background: var(--amarelo1);
     display: block;
-    width: 20px;
-    border-top: 2px solid rgba(231, 206, 157, 1);
-    margin-top: 5px;
-    transition: .3s;
     position: relative;
+    transition: background 0s 0s;
 }
-
-#nav.active #hamburguer {
-    border-top-color: transparent;
+#hamburguer::before,
+#hamburguer::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--amarelo1);
+    display: block;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
 }
-
-#nav.active #hamburguer::before {
-    transform: rotate(135deg);
-    top: 0px;
-}
-
-#nav.active #hamburguer::after {
-    transform: rotate(-135deg);
+#hamburguer::before {
     top: -7px;
+}
+#hamburguer::after {
+    top: 7px;
+}
+#nav.active #hamburguer {
+    background: transparent;
+}
+#nav.active #hamburguer::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+#nav.active #hamburguer::after {
+    top: 0;
+    transform: rotate(-135deg);
 }
 
 #menu li {
