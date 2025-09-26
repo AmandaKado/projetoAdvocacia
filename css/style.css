@@ -151,7 +151,7 @@ h1 {
     display: block;
     gap: .5rem;
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: calc(100vh);
     top: 60px;
     right: 0px;
