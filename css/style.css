@@ -387,6 +387,45 @@ h1 {
     opacity: 1;
 }
 
+/** Seção Contatos **/
+
+.secaoContato {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.9),
+        rgba(29, 34, 50, 0.9)
+    ),
+    url('../media/backgroundJustica.jpg');
+    background-size: cover;      
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.secaoContato p {
+    color: var(--branco);
+    margin-bottom: 20px;
+}
+
+.formularioContato {
+    background-color: var(--amarelo1);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.formularioContato h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: normal;
+    color: var(--azulEscuro);
+    margin-bottom: 20px;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
 /* Rodapé */
 
 /* Responsividade */
