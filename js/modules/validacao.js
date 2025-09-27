@@ -62,4 +62,49 @@ export default function initValidarFormulario() {
         emailField.addEventListener('blur', checkEmailField);
     }
 
+    function sendEmail() {
+
+        const serviceID = 'service_dfmoyk5';
+        const templateID = 'template_4tel1jiD';
+        const publicKey = 'ePTGjJknY8Jqe_Y8p';
+
+        emailjs.sendForm(serviceID, templateID, form, publicKey)
+        .then(() => {
+            sendButton.innerText = 'Enviado com Sucesso!';
+            sendButton.style.backgroundColor = '#27ae60';
+            form.reset();
+            
+            setTimeout(() => {
+                sendButton.innerText = 'Enviar Mensagem';
+                sendButton.style.backgroundColor = '';
+                sendButton.disabled = false;
+            }, 5000);
+
+        }, (err) => {
+            sendButton.innerText = 'Erro ao Enviar';
+            sendButton.style.backgroundColor = '#c0392b'; 
+            alert('Ocorreu um erro inesperado. Por favor, tente novamente.\n\n' + JSON.stringify(err));
+            sendButton.disabled = false;
+        });
+    } 
+
+    function handleFormSubmit(event) {
+        event.preventDefault(); 
+        
+        const areRequiredFieldsValid = checkRequiredFields();
+        const isEmailValid = checkEmailField();
+
+        if (areRequiredFieldsValid && isEmailValid) {
+            sendButton.innerText = 'Enviando...';
+            sendButton.disabled = true;
+            sendEmail();
+        }
+    }
+
+    if (form) {
+        form.addEventListener('submit', handleFormSubmit);
+        emailField.addEventListener('blur', checkEmailField);
+    }
+}
+
 }
