@@ -106,5 +106,3 @@ export default function initValidarFormulario() {
         emailField.addEventListener('blur', checkEmailField);
     }
 }
-
-}
