@@ -183,23 +183,26 @@
 
             <p>Estamos à disposição para ouvir sua história e encontrar a <span class="spanAmarelo">melhor solução jurídica para o seu caso</span>. Preencha o formulário ou entre em contato por um de nossos canais. <span class="spanAmarelo">Todas as informações são tratadas com sigilo absoluto</span>.</p>
 
-            <form action="#" method="post" class="formularioContato">
+            <form action="#" method="post" class="formularioContato" novalidate>
 
                 <h2>Entre em Contato</h2>
 
                 <div class="formGroup">
                     <input type="text" id="nome" name="nome" required placeholder=" " maxlength="100">
                     <label for="nome">Nome</label>
+                    <span class="errorMessage"></span>
                 </div>
 
                 <div class="formGroup">
                     <input type="email" id="email" name="email" required placeholder=" " maxlength="100">
                     <label for="email">E-mail</label>
+                    <span class="errorMessage"></span>
                 </div>
 
                 <div class="formGroup">
                     <textarea id="mensagem" name="mensagem" required placeholder=" " maxlength="700"></textarea>
                     <label for="mensagem">Escreva sua mensagem aqui</label>
+                    <span class="errorMessage"></span>
                 </div>
 
                 <div class="formGroup">
