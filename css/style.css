@@ -637,4 +637,38 @@ footer p {
     filter: blur(0);
 }
 
+.btn-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--amarelo3);
+    color: var(--azulEscuro);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2000; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    opacity: 1;
+    visibility: hidden;
+    transform: translateY(10px);
+}
+
+.btn-top.show {
+    opacity: 0.5;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.btn-top:hover {
+    background-color: var(--amarelo5);
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
 /* Responsividade */
