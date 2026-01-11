@@ -409,12 +409,12 @@ h1 {
     max-width: 98%;
     margin: 0 auto;
     padding: 40px 30px;
-    background-color: var(--amarelo1); /* Fundo creme do formulário */
-    border-radius: 15px; /* Cantos arredondados */
+    background-color: var(--amarelo1);
+    border-radius: 15px; 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
-.formularioContato h2 { /* Título "Entre em Contato" */
+.formularioContato h2 { 
     text-align: center;
     color: var(--azulEscuro);
     font-family: var(--h1Font);
