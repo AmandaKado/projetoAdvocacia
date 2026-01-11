@@ -2,8 +2,8 @@ export default function initScrollReveal() {
   const sections = document.querySelectorAll('.js-scroll');
 
   if (sections.length) {
-    
-    const windowAjustado = window.innerHeight * 0.9;
+
+    const windowAjustado = window.innerHeight * 1;
 
     function animaScroll() {
       sections.forEach((section) => {
