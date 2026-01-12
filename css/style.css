@@ -869,4 +869,139 @@ footer p {
 
 @media screen and (min-width: 1024px) {
 
+    /* --- Configuração Global de Desktop --- */
+    .secao {
+        padding: 100px 10%; /* Margens laterais amplas como no design */
+    }
+
+    h1 {
+        font-size: 2em;
+        line-height: 1.1;
+    }
+
+    /* --- Cabeçalho (Menu Horizontal) --- */
+    #header {
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #btnMobile { display: none; }
+
+    #menu {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        background: none;
+        visibility: visible;
+        clip-path: none;
+        gap: 40px;
+    }
+
+    #menu li { padding: 0; }
+    #menu a { font-size: 1rem; color: var(--branco); }
+
+    /* --- Seção Início (Layout 2 Colunas) --- */
+    .secaoInicio {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    .secaoInicio h1 {
+        flex: 1; /* Ocupa a metade esquerda */
+    }
+
+    .inicioContent {
+        flex: 1; /* Ocupa a metade direita */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* --- Seção Sobre Nós (Imagem à Esquerda) --- */
+    .secaoSobreNos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+
+    #fotoPerfil {
+        width: 450px; /* Largura fixa para a foto no desktop */
+        margin-bottom: 0;
+    }
+
+    .topicos {
+        display: flex;
+        gap: 30px;
+    }
+
+    .sobreNosTexto {
+        flex: 1;
+    }
+
+    /* --- Áreas de Atuação (3 Colunas Perfeitas) --- */
+    #containerCaixas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .caixaAreas {
+        /* Divide 100% por 3 e subtrai o espaço dos gaps */
+        flex: 0 1 calc(33.33% - 14px); 
+        margin-bottom: 0;
+    }
+
+    /* --- Contato (Lado a Lado) --- */
+    .secaoContato {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 80px;
+    }
+
+    .contatoInfo {
+        flex: 1;
+    }
+
+    .formularioContato {
+        flex: 1;
+        max-width: 500px;
+        margin: 0;
+    }
+
+    .redesSociais {
+        justify-content: flex-start;
+        margin-top: 40px;
+    }
+
+    /* --- Rodapé (Layout Horizontal) --- */
+    footer.secao {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footerHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    #logoRodape { width: 280px; margin: 0; }
+
+    .footerMain {
+        display: flex;
+        justify-content: flex-start;
+        gap: 150px;
+        width: 100%;
+    }
 }
