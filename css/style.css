@@ -715,19 +715,46 @@ footer p {
         align-items: center;
         gap: 60px;
     }
-    .secaoInicio h1 { 
-        flex: 3rem; 
-    }
 
     .inicioContent { 
         flex: 1; 
     }
 
-    .secaoInicio h1 {
-        flex: 1;
+    .secaoInicio h1 { 
+        flex: 1; 
+        font-size: 3rem; /* O tamanho da fonte deve estar aqui */
     }
 
     /** Seção Sobre **/
+    
+    .sobreNosContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start; /* Alinha pelo topo para não esticar a imagem */
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    #fotoPerfil {
+        /* Em vez de 50%, usamos uma largura que faça sentido no espaço com 20% de padding */
+        width: 40%; 
+        max-width: 450px;
+        height: auto;
+        
+        /* O SEGREDO PARA NÃO ACHATAR: aspect-ratio */
+        /* Isto obriga a imagem a manter a forma, não importa o que o flex faça */
+        aspect-ratio: 4 / 5; 
+        object-fit: cover;
+        
+        flex-shrink: 0; /* Impede que o texto "empurre" a largura da foto */
+        
+        border-radius: 100px 30px;
+        box-shadow: 15px 15px 0px 0px var(--amarelo3);
+    }
+    
+    .sobreNosContainer > div {
+        flex: 1;
+    }
 
     /** Seção Contatos **/
 
