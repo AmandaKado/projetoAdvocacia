@@ -673,335 +673,351 @@ footer p {
 
 /* Responsividade */
 
-@media (min-width: 700px) and (max-width: 1023px) {
-
-    h1 {
-        font-size: 2.5em;
-    }
-
-    p {
-        font-size: 1.2em;
-        margin-bottom: 30px;
-    }
-
-    .secao {
-        padding: 90px;
-    }
-    
-    .marginParaBaixo {
-        margin-bottom: 30px;
-    }
-    
-    .btnAmarelo {
-        font-size: 1.5em;
-        padding: 15px 30px;
-    }
-
-    .btnAmarelo img {
-        height: 40px;
-        margin-left: 30px;
-    }
-    
-    /* CABEÇALHO */
-    
-    #header {
-        padding: 30px;
-    }
-    
-    #logo img { 
-        height: 60px;
-        padding-left: 30px; 
-    }
-    
-    #menu {
-        top: 120px;
-    }
-    
-    #menu a {
-        font-size: 2em;
-    }
-    
-    #hamburguer {
-        margin-right: 30px;
-        width: 40px;
-    }
-
-    #menu li {
-        padding-left: 60px;
-        padding-top: 30px;
-    }
-    
-    .navLink::after {
-        bottom: -10px;
-    }
-
-    /* Principal */
-
-    /** Seção Inicio **/
-
-    #inicio {
-        margin-top: 60px;
-    }
-    
-    /** Seção Sobre **/
-    
-    #fotoPerfil {
-        margin-bottom: 30px;
-        border-radius: 100px 30px;
-        box-shadow: 15px 15px 0px 0px var(--amarelo3);
-    }
-    
-    #sobreNos h1 {
-        margin-bottom: 30px;
-    }
-    
-    #sobreNos div {
-        margin-top: 30px;
-    }
-    
-    .subtituloSobreNos h2 {
-        font-size: 1.2em;
-    }
-    
-    #sobreNos div img {
-        height: 20px;
-        margin-right: 15px;
-    }
-    
-    /** Seção Áreas de Atuação **/
-
-    #areasAtuacao p {
-        margin-bottom: 30px;
-    }
-    
-    .caixaAreas {
-        padding: 30px;
-        margin-bottom: 60px;
-        box-shadow: 15px 15px 0 0 var(--amarelo3);
-    }
-    
-    .caixaAreas:hover {
-        box-shadow: 10px 10px 0 0 var(--amarelo5);
-    }
-
-    .divIconeTitulo {
-        gap: 30px;
-        margin-bottom: 30px;
-    }
-    
-    .iconeContainer {
-        width: 40px;
-        height: 40px;
-    }
-
-    /** Seção Contatos **/
-    
-    .secaoContato {  
-        background-position: 0% 90%;
-    }
-    
-    .formularioContato {
-        max-width: 80vw;
-        padding: 30px;
-    }
-
-    .formularioContato h2 { 
-        font-size: 2.5em;
-        font-weight: bold;
-    }
-    .formGroup {
-        margin-bottom: 30px;
-    }
-    
-    .formGroup input,
-    .formGroup textarea {
-        font-size: 1em;
-    }
-    
-    .formGroup input:focus + label,
-    .formGroup input:not(:placeholder-shown) + label,
-    .formGroup textarea:focus + label,
-    .formGroup textarea:not(:placeholder-shown) + label {
-        top: -23px;
-        font-size: 1em;
-    }
-    
-    .btnEnviar {
-        padding: 20px;
-        font-size: 1.5em;
-    }
-    
-    /* Rodapé */
-    
-    footer .divTransparente {
-        margin: 60px 0;
-    }
-
-    footer h1 {
-        margin-bottom: 60px;
-    }
-    
-    .menuFooter, .atendimentoFooter {
-        margin-bottom: 60px;
-    }
-    
-    .menuFooter li a, .atendimentoFooter li a p {
-        font-size: 1.5em;
-    }
-
-    .atendimentoFooter .divAtendimento h3 {
-        font-size: 1em;
-    }
-    
-    .atendimentoFooter .divAtendimento p {
-        font-size: 1.2em;
-    }
-    
-    .atendimentoFooter img{
-        width: 60px;
-    }
-    
-    footer p {
-        font-size: 1em;
-    }
-    
-}
-
 @media screen and (min-width: 1024px) {
 
-    /* --- Configuração Global de Desktop --- */
     .secao {
-        padding: 100px 10%; /* Margens laterais amplas como no design */
+        padding: 120px 20%; 
     }
 
-    h1 {
-        font-size: 2em;
-        line-height: 1.1;
-    }
-
-    /* --- Cabeçalho (Menu Horizontal) --- */
     #header {
-        padding: 20px 10%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+
+        padding: 30px 20%;
     }
 
-    #btnMobile { display: none; }
+    #logo img {
+        height: 60px;
+    }
+
+    #btnMobile { 
+        display: none; 
+    }
 
     #menu {
         position: static;
         display: flex;
-        flex-direction: row;
-        width: auto;
-        height: auto;
-        background: none;
         visibility: visible;
         clip-path: none;
-        gap: 40px;
-    }
-
-    #menu li { padding: 0; }
-    #menu a { font-size: 1rem; color: var(--branco); }
-
-    /* --- Seção Início (Layout 2 Colunas) --- */
-    .secaoInicio {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 60px;
-    }
-
-    .secaoInicio h1 {
-        flex: 1; /* Ocupa a metade esquerda */
-    }
-
-    .inicioContent {
-        flex: 1; /* Ocupa a metade direita */
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    /* --- Seção Sobre Nós (Imagem à Esquerda) --- */
-    .secaoSobreNos {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 80px;
-    }
-
-    #fotoPerfil {
-        width: 450px; /* Largura fixa para a foto no desktop */
-        margin-bottom: 0;
-    }
-
-    .topicos {
-        display: flex;
+        background: none;
+        height: 90px;
+        width: 100%;
         gap: 30px;
     }
 
-    .sobreNosTexto {
-        flex: 1;
+    #menu a { 
+        font-size: 1.5em;
     }
 
-    /* --- Áreas de Atuação (3 Colunas Perfeitas) --- */
-    #containerCaixas {
+    .secaoInicio {
         display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .caixaAreas {
-        /* Divide 100% por 3 e subtrai o espaço dos gaps */
-        flex: 0 1 calc(33.33% - 14px); 
-        margin-bottom: 0;
-    }
-
-    /* --- Contato (Lado a Lado) --- */
-    .secaoContato {
-        display: flex;
+        font-size: 1em;
         justify-content: space-between;
-        align-items: flex-start;
-        gap: 80px;
+        padding-top: 180px; 
+        align-items: center;
+        gap: 60px;
+    }
+    .secaoInicio h1 { 
+        flex: 3rem; 
     }
 
-    .contatoInfo {
+    .inicioContent { 
+        flex: 1; 
+    }
+
+    .secaoInicio h1 {
         flex: 1;
+    }
+
+    /** Seção Sobre **/
+
+    .sobreNosContainer {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    /** Seção Contatos **/
+
+    .secaoContato {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.9),  
+            rgba(29, 34, 50, 0.9)), 
+            url('../media/backgroundJustica.jpg');
+        background-size: cover;      
+        background-position: 15% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .secaoContato p {
+        color: var(--branco);
+        margin: 30px 0;
     }
 
     .formularioContato {
-        flex: 1;
-        max-width: 500px;
-        margin: 0;
+        max-width: 98%;
+        margin: 0 auto;
+        padding: 40px 30px;
+        background-color: var(--amarelo1);
+        border-radius: 15px; 
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        text-align: left;
+    }
+    .formularioContato h2 { 
+        text-align: center;
+        color: var(--azulEscuro);
+        font-family: var(--h1Font);
+        font-size: 2rem;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    .formGroup {
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    .formGroup label {
+        position: absolute;
+        top: 17px;
+        left: 15px;
+        color: var(--cinza);
+        pointer-events: none;
+        transition: all 0.2s ease;
+    }
+
+    .formGroup input,
+    .formGroup textarea {
+        width: 100%;
+        padding: 15px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-family: var(--fontFamily);
+        background-color: var(--branco);
+        color: var(--pretoClaro);
+        transition: box-shadow 0.3s ease;
+    }
+    .formGroup input:focus,
+    .formGroup textarea:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px var(--amarelo3);
+    }
+    .formGroup textarea {
+        min-height: 150px;
+        resize: vertical;
+    }
+
+    .formGroup input:focus + label,
+    .formGroup input:not(:placeholder-shown) + label,
+    .formGroup textarea:focus + label,
+    .formGroup textarea:not(:placeholder-shown) + label {
+        top: -20px;
+        left: 0px;
+        font-size: 0.8rem;
+        color: var(--azulEscuro);
+        background-color: var(--amarelo1); 
+        padding: 0 5px;
+    }
+
+    .btnEnviar {
+        width: 100%;
+        padding: 15px;
+        border-radius: 8px;
+        border: none;
+        background: var(--amarelo3);
+        color: var(--azulEscuro);
+        font-size: 1.1em;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: background-color 0.4s ease, transform 0.4s ease;
+    }
+    .btnEnviar:hover {
+        background-color: var(--amarelo4);
+        transform: translateY(-2px);
+    }
+
+    .divTransparente {
+        margin: 60px 0;
+        background: var(--degradeAmarelo);
+        border-radius: 100px;
+        height: 3px;
+        opacity: 0.2;
+    }
+
+    #atendimentoFooter {
+        display: flex;
+        justify-content: center;
+        height: 60px;
     }
 
     .redesSociais {
-        justify-content: flex-start;
-        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
     }
 
-    /* --- Rodapé (Layout Horizontal) --- */
-    footer.secao {
+    .redesSociais .iconesRedes img {
+        height: 100%;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .redesSociais .iconesRedes:hover img {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+
+    .errorMessage {
+        color: #c0392b;
+        font-size: 0.8rem;
+        display: none;
+        margin-top: 5px;
+    }
+
+    .formGroup.error, .errorMessage {
+        display: block;
+    }
+
+    .formGroup.error input,
+    .formGroup.error textarea {
+        border: 1px solid #c0392b;
+    }
+
+    .formGroup.error label {
+        color: #c0392b;
+    }
+
+    /* Rodapé */
+
+    #logoRodape {
+        width: 100%; 
+        margin: 0 0 30px 0;
+    }
+
+    footer .divTransparente {
+        margin: 30px 0;
+    }
+
+    footer h1 {
+        color: var(--amarelo3);
+    }
+
+    .menuFooter, .atendimentoFooter {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
     }
 
-    .footerHeader {
+    .menuFooter ul, .atendimentoFooter ul {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menuFooter li a, .atendimentoFooter li a p {
+        position: relative;
+        display: inline-block;
+        color: var(--branco);
+        font-size: 1.1em;
+        transition: color 0.4s ease;
+    }
+
+    .menuFooter li a::after, .atendimentoFooter li a p::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 2px;
+        background: var(--degradeAmarelo);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.6s ease;
+    }
+
+    .menuFooter li a:hover::after, .atendimentoFooter li a p:hover::after {
+        transform: scaleX(1);
+    }
+
+    .atendimentoFooter ul li {
+        margin-bottom: 15px;
+    }
+
+    .atendimentoFooter ul li a {
+        display: flex;
+        align-items: start;
+        gap: 15px;
+    }
+
+    .atendimentoFooter .divAtendimento h3 {
+        color: var(--amarelo1);
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+    .atendimentoFooter .divAtendimento p {
+        color: var(--branco);
+        font-size: 1em;
+    }
+
+    .atendimentoFooter img{
+        width: 40px;
+    }
+
+    footer p {
+        font-size: 11px;
+        color: var(--cinza);
+        text-align: center;
+    }
+
+    /* Estilos de Funções */
+
+    .js-scroll {
+        opacity: 0;
+        transform: translateY(15px); 
+        filter: blur(0.9px);
+        transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .js-scroll.ativo {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+
+    .btn-top {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        background-color: var(--amarelo3);
+        color: var(--azulEscuro);
+        border: none;
+        border-radius: 50%;
+        display: flex;
         align-items: center;
-        width: 100%;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 2000; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+        opacity: 1;
+        visibility: hidden;
+        transform: translateY(10px);
     }
 
-    #logoRodape { width: 280px; margin: 0; }
-
-    .footerMain {
-        display: flex;
-        justify-content: flex-start;
-        gap: 150px;
-        width: 100%;
+    .btn-top.show {
+        opacity: 0.5;
+        visibility: visible;
+        transform: translateY(0);
     }
+
+    .btn-top:hover {
+        background-color: var(--amarelo5);
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+
+
 }
