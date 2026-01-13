@@ -729,12 +729,6 @@ footer p {
 
     /** Seção Sobre **/
 
-    .sobreNosContainer {
-        display: flex;
-        align-items: center;
-        gap: 60px;
-    }
-
     /** Seção Contatos **/
 
     .secaoContato {
