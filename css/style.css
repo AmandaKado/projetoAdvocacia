@@ -958,7 +958,7 @@ footer p {
 }
 
 @media screen and (min-width: 1024px) {
-    
+
     p {
         font-size: 1.2rem;
         margin-bottom: 40px;
@@ -1082,164 +1082,47 @@ footer p {
     /** Seção Contatos **/
 
     .secaoContato {
-        background-image: linear-gradient(to bottom,
-                rgba(0, 0, 0, 0.9),
-                rgba(29, 34, 50, 0.9)),
-            url('../media/backgroundJustica.jpg');
-        background-size: cover;
-        background-position: 15% 50%;
-        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        column-gap: 120px; 
+        row-gap: 20px;  
+        align-items: start;
     }
 
-    .secaoContato p {
-        color: var(--branco);
-        margin: 30px 0;
-    }
-
-    .formularioContato {
-        max-width: 98%;
-        margin: 0 auto;
-        padding: 40px 30px;
-        background-color: var(--amarelo1);
-        border-radius: 15px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        text-align: left;
-    }
-
-    .formularioContato h2 {
-        text-align: center;
-        color: var(--azulEscuro);
-        font-family: var(--h1Font);
-        font-size: 2rem;
-        font-weight: normal;
-        margin-bottom: 30px;
-    }
-
-    .formGroup {
-        position: relative;
-        margin-bottom: 25px;
-    }
-
-    .formGroup label {
-        position: absolute;
-        top: 17px;
-        left: 15px;
-        color: var(--cinza);
-        pointer-events: none;
-        transition: all 0.2s ease;
-    }
-
-    .formGroup input,
-    .formGroup textarea {
-        width: 100%;
-        padding: 15px;
-        border: none;
-        border-radius: 8px;
-        font-size: 1rem;
-        font-family: var(--fontFamily);
-        background-color: var(--branco);
-        color: var(--pretoClaro);
-        transition: box-shadow 0.3s ease;
-    }
-
-    .formGroup input:focus,
-    .formGroup textarea:focus {
-        outline: none;
-        box-shadow: 0 0 0 3px var(--amarelo3);
-    }
-
-    .formGroup textarea {
-        min-height: 150px;
-        resize: vertical;
-    }
-
-    .formGroup input:focus+label,
-    .formGroup input:not(:placeholder-shown)+label,
-    .formGroup textarea:focus+label,
-    .formGroup textarea:not(:placeholder-shown)+label {
-        top: -20px;
-        left: 0px;
-        font-size: 0.8rem;
-        color: var(--azulEscuro);
-        background-color: var(--amarelo1);
-        padding: 0 5px;
-    }
-
-    .btnEnviar {
-        width: 100%;
-        padding: 15px;
-        border-radius: 8px;
-        border: none;
-        background: var(--amarelo3);
-        color: var(--azulEscuro);
-        font-size: 1.1em;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        transition: background-color 0.4s ease, transform 0.4s ease;
-    }
-
-    .btnEnviar:hover {
-        background-color: var(--amarelo4);
-        transform: translateY(-2px);
+    .contatoInfo {
+        grid-column: 1;
+        grid-row: 1; 
     }
 
     .divTransparente {
-        margin: 60px 0;
-        background: var(--degradeAmarelo);
-        border-radius: 100px;
-        height: 3px;
-        opacity: 0.2;
-    }
-
-    #atendimentoFooter {
-        display: flex;
-        justify-content: center;
-        height: 60px;
+        grid-column: 1;
+        grid-row: 2; 
+        margin: 20px 0;
     }
 
     .redesSociais {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
+        grid-column: 1;
+        grid-row: 3; 
+        justify-content: flex-start; 
     }
 
-    .redesSociais .iconesRedes img {
-        height: 100%;
-        transition: transform 0.3s ease, opacity 0.3s ease;
-    }
-
-    .redesSociais .iconesRedes:hover img {
-        transform: scale(1.15);
-        opacity: 1;
-    }
-
-    .errorMessage {
-        color: #c0392b;
-        font-size: 0.8rem;
-        display: none;
-        margin-top: 5px;
-    }
-
-    .formGroup.error,
-    .errorMessage {
-        display: block;
-    }
-
-    .formGroup.error input,
-    .formGroup.error textarea {
-        border: 1px solid #c0392b;
-    }
-
-    .formGroup.error label {
-        color: #c0392b;
+    .formularioContato {
+        grid-column: 2;
+        grid-row: 1 / span 3; 
+        margin: 0;
+        width: 100%;
+        max-width: 700px;
     }
 
     /* Rodapé */
 
+    .footerHeader {
+        display: flex;
+        justify-content: space-between;
+    }
+
     #logoRodape {
-        width: 100%;
-        margin: 0 0 30px 0;
+        width: 500px;
     }
 
     footer .divTransparente {
