@@ -739,6 +739,11 @@ footer p {
 
 @media (min-width: 700px) and (max-width: 1023px) {
 
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 60px;
+    }
+
     h1 {
         font-size: 2.5em;
     }
@@ -959,6 +964,11 @@ footer p {
 }
 
 @media screen and (min-width: 1024px) {
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 60px;
+    }
 
     p {
         font-size: 1.2rem;
