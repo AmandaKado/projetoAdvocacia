@@ -324,10 +324,10 @@ h1 {
 /** Seção Sobre **/
 
 #fotoPerfil {
-    width: 100%;           
+    width: 100%;
     max-width: 600px;
     min-height: 350px;
-    height: auto;           
+    height: auto;
     object-fit: cover;
     border-radius: 50px 10px;
     box-shadow: 5px 5px 0px 0px var(--amarelo3);
@@ -366,7 +366,7 @@ h1 {
     display: flex;
     align-items: center;
     padding: 15px 0 5px 0;
-} 
+}
 
 .btnAmarelo {
     margin-top: 20px;
@@ -735,8 +735,6 @@ footer p {
     transform: translateY(-5px);
 }
 
-
-
 /* Responsividade */
 
 @media (min-width: 700px) and (max-width: 1023px) {
@@ -753,11 +751,11 @@ footer p {
     .secao {
         padding: 90px;
     }
-    
+
     .marginParaBaixo {
         margin-bottom: 30px;
     }
-    
+
     .btnAmarelo {
         font-size: 1.5em;
         padding: 15px 30px;
@@ -767,26 +765,26 @@ footer p {
         height: 40px;
         margin-left: 30px;
     }
-    
+
     /* CABEÇALHO */
-    
+
     #header {
         padding: 30px;
     }
-    
-    #logo img { 
+
+    #logo img {
         height: 60px;
-        padding-left: 30px; 
+        padding-left: 30px;
     }
-    
+
     #menu {
         top: 120px;
     }
-    
+
     #menu a {
         font-size: 2em;
     }
-    
+
     #hamburguer {
         margin-right: 30px;
         width: 40px;
@@ -809,7 +807,7 @@ footer p {
     #nav.active #hamburguer::after {
         top: 0;
     }
-    
+
     .navLink::after {
         bottom: -10px;
     }
@@ -821,24 +819,24 @@ footer p {
     #inicio {
         margin-top: 60px;
     }
-    
+
     /** Seção Sobre **/
-    
+
     #fotoPerfil {
         min-height: 600px;
         margin-bottom: 30px;
         border-radius: 100px 30px;
         box-shadow: 15px 15px 0px 0px var(--amarelo3);
     }
-    
+
     #sobreNos h1 {
         margin-bottom: 30px;
     }
-    
+
     #sobreNos div {
         margin-top: 30px;
     }
-    
+
     .subtituloSobreNos h2 {
         font-size: 1.2em;
     }
@@ -851,25 +849,25 @@ footer p {
         display: flex;
         align-items: center;
     }
-    
+
     #sobreNos div img {
         height: 20px;
         margin-right: 15px;
     }
 
-    
+
     /** Seção Áreas de Atuação **/
 
     #areasAtuacao p {
         margin-bottom: 30px;
     }
-    
+
     .caixaAreas {
         padding: 30px;
         margin-bottom: 60px;
         box-shadow: 15px 15px 0 0 var(--amarelo3);
     }
-    
+
     .caixaAreas:hover {
         box-shadow: 10px 10px 0 0 var(--amarelo5);
     }
@@ -878,51 +876,52 @@ footer p {
         gap: 30px;
         margin-bottom: 30px;
     }
-    
+
     .iconeContainer {
         width: 40px;
         height: 40px;
     }
 
     /** Seção Contatos **/
-    
-    .secaoContato {  
+
+    .secaoContato {
         background-position: 0% 90%;
     }
-    
+
     .formularioContato {
         max-width: 80vw;
         padding: 30px;
     }
 
-    .formularioContato h2 { 
+    .formularioContato h2 {
         font-size: 2.5em;
         font-weight: bold;
     }
+
     .formGroup {
         margin-bottom: 30px;
     }
-    
+
     .formGroup input,
     .formGroup textarea {
         font-size: 1em;
     }
-    
-    .formGroup input:focus + label,
-    .formGroup input:not(:placeholder-shown) + label,
-    .formGroup textarea:focus + label,
-    .formGroup textarea:not(:placeholder-shown) + label {
+
+    .formGroup input:focus+label,
+    .formGroup input:not(:placeholder-shown)+label,
+    .formGroup textarea:focus+label,
+    .formGroup textarea:not(:placeholder-shown)+label {
         top: -23px;
         font-size: 1em;
     }
-    
+
     .btnEnviar {
         padding: 20px;
         font-size: 1.5em;
     }
-    
+
     /* Rodapé */
-    
+
     footer .divTransparente {
         margin: 60px 0;
     }
@@ -930,31 +929,33 @@ footer p {
     footer h1 {
         margin-bottom: 60px;
     }
-    
-    .menuFooter, .atendimentoFooter {
+
+    .menuFooter,
+    .atendimentoFooter {
         margin-bottom: 60px;
     }
-    
-    .menuFooter li a, .atendimentoFooter li a p {
+
+    .menuFooter li a,
+    .atendimentoFooter li a p {
         font-size: 1.5em;
     }
 
     .atendimentoFooter .divAtendimento h3 {
         font-size: 1em;
     }
-    
+
     .atendimentoFooter .divAtendimento p {
         font-size: 1.2em;
     }
-    
-    .atendimentoFooter img{
+
+    .atendimentoFooter img {
         width: 60px;
     }
-    
+
     footer p {
         font-size: 1em;
     }
-    
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -1083,32 +1084,32 @@ footer p {
 
     .secaoContato {
         display: grid;
-        grid-template-columns: 1fr 1fr; 
-        column-gap: 120px; 
-        row-gap: 20px;  
+        grid-template-columns: 1fr 1fr;
+        column-gap: 120px;
+        row-gap: 20px;
         align-items: start;
     }
 
     .contatoInfo {
         grid-column: 1;
-        grid-row: 1; 
+        grid-row: 1;
     }
 
     .divTransparente {
         grid-column: 1;
-        grid-row: 2; 
+        grid-row: 2;
         margin: 20px 0;
     }
 
     .redesSociais {
         grid-column: 1;
-        grid-row: 3; 
-        justify-content: flex-start; 
+        grid-row: 3;
+        justify-content: flex-start;
     }
 
     .formularioContato {
         grid-column: 2;
-        grid-row: 1 / span 3; 
+        grid-row: 1 / span 3;
         margin: 0;
         width: 100%;
         max-width: 700px;
